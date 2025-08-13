@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - MIRMIA Natural Wellness & Beauty</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" class="logo-link">
+                    <img src="LOGO.png" alt="MIRMIA" class="logo-img">
+                    <span class="logo-text">MIRMIA</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">HOME</a></li>
+                <li><a href="shop.html" class="nav-link active">SHOP</a></li>
+                <li><a href="services.html" class="nav-link">SERVICES</a></li>
+                <li><a href="about.html" class="nav-link">ABOUT</a></li>
+                <li><a href="contact.html" class="nav-link">CONTACT</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#" class="nav-icon"><i class="fas fa-search"></i></a>
+                <a href="cart.html" class="nav-icon"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#" class="nav-icon"><i class="fas fa-user"></i></a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Shop Header -->
+    <section class="shop-header">
+        <div class="container">
+            <h1>Shop Our Products</h1>
+            <p>Discover our carefully curated collection of natural wellness and beauty products</p>
+        </div>
+    </section>
+
+    <!-- Filters and Categories -->
+    <section class="shop-filters">
+        <div class="container">
+            <div class="filter-container">
+                <div class="category-filters">
+                    <button class="filter-btn active" data-category="all">All Products</button>
+                    <button class="filter-btn" data-category="wellness">Wellness</button>
+                    <button class="filter-btn" data-category="beauty">Beauty</button>
+                    <button class="filter-btn" data-category="skincare">Skincare</button>
+                    <button class="filter-btn" data-category="aromatherapy">Aromatherapy</button>
+                </div>
+                <div class="sort-filter">
+                    <select id="sort-select">
+                        <option value="featured">Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="name">Name: A to Z</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="shop-products">
+        <div class="container">
+            <div class="products-grid" id="products-grid">
+                <!-- Wellness Products -->
+                <div class="product-card" data-category="wellness">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <div class="product-badge">Best Seller</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Wellness Elixir</h3>
+                        <p class="product-description">Natural blend for daily wellness support</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(24 reviews)</span>
+                        </div>
+                        <p class="product-price">$45.00</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="wellness">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Immunity Boost Tonic</h3>
+                        <p class="product-description">Strengthen your natural defenses</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(18 reviews)</span>
+                        </div>
+                        <p class="product-price">$38.00</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Beauty Products -->
+                <div class="product-card" data-category="beauty">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <div class="product-badge">New</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Beauty Serum</h3>
+                        <p class="product-description">Nourishing serum for radiant skin</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(31 reviews)</span>
+                        </div>
+                        <p class="product-price">$42.00</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="beauty">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Glow Face Mask</h3>
+                        <p class="product-description">Revitalizing clay mask for all skin types</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(27 reviews)</span>
+                        </div>
+                        <p class="product-price">$28.00</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Skincare Products -->
+                <div class="product-card" data-category="skincare">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Hydrating Moisturizer</h3>
+                        <p class="product-description">Deep hydration for dry skin</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(35 reviews)</span>
+                        </div>
+                        <p class="product-price">$36.00</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="skincare">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Natural Sunscreen</h3>
+                        <p class="product-description">Broad spectrum protection SPF 30</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(22 reviews)</span>
+                        </div>
+                        <p class="product-price">$32.00</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Aromatherapy Products -->
+                <div class="product-card" data-category="aromatherapy">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-moon"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Calm Essential Oil</h3>
+                        <p class="product-description">Soothing blend for relaxation</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(29 reviews)</span>
+                        </div>
+                        <p class="product-price">$32.00</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="aromatherapy">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Energy Boost Oil</h3>
+                        <p class="product-description">Invigorating blend for vitality</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(16 reviews)</span>
+                        </div>
+                        <p class="product-price">$34.00</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Additional Wellness Products -->
+                <div class="product-card" data-category="wellness">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Heart Health Tonic</h3>
+                        <p class="product-description">Support cardiovascular wellness naturally</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(12 reviews)</span>
+                        </div>
+                        <p class="product-price">$42.00</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="wellness">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Focus & Clarity Blend</h3>
+                        <p class="product-description">Enhance mental clarity and concentration</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(19 reviews)</span>
+                        </div>
+                        <p class="product-price">$39.00</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Additional Beauty Products -->
+                <div class="product-card" data-category="beauty">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Eye Contour Gel</h3>
+                        <p class="product-description">Reduce puffiness and dark circles</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(25 reviews)</span>
+                        </div>
+                        <p class="product-price">$35.00</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="beauty">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-lips"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Natural Lip Balm</h3>
+                        <p class="product-description">Moisturizing and protective lip care</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(33 reviews)</span>
+                        </div>
+                        <p class="product-price">$18.00</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Additional Skincare Products -->
+                <div class="product-card" data-category="skincare">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-wind"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Gentle Cleanser</h3>
+                        <p class="product-description">Mild cleansing for sensitive skin</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(28 reviews)</span>
+                        </div>
+                        <p class="product-price">$26.00</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="skincare">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Anti-Aging Night Cream</h3>
+                        <p class="product-description">Repair and rejuvenate while you sleep</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(21 reviews)</span>
+                        </div>
+                        <p class="product-price">$48.00</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Additional Aromatherapy Products -->
+                <div class="product-card" data-category="aromatherapy">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-bed"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Sleep Well Diffuser Blend</h3>
+                        <p class="product-description">Promote restful sleep naturally</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(30 reviews)</span>
+                        </div>
+                        <p class="product-price">$36.00</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="aromatherapy">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-rose"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Rose & Lavender Mist</h3>
+                        <p class="product-description">Calming facial mist for daily refreshment</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(26 reviews)</span>
+                        </div>
+                        <p class="product-price">$24.00</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe for new product launches, exclusive offers, and wellness tips</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <a href="index.html" class="logo-link">
+                            <img src="LOGO.png" alt="MIRMIA" class="logo-img">
+                            <span class="logo-text">MIRMIA</span>
+                        </a>
+                    </div>
+                    <p>Natural wellness and beauty solutions for a healthier, more beautiful you.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/mirmia.mirmia/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for exclusive offers and wellness tips</p>
+                    <form class="footer-newsletter">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MIRMIA. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="shop.js"></script>
+</body>
+</html> 

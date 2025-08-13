@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - MIRMIA Natural Wellness & Beauty</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" class="logo-link">
+                    <img src="LOGO.png" alt="MIRMIA" class="logo-img">
+                    <span class="logo-text">MIRMIA</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">HOME</a></li>
+                <li><a href="shop.html" class="nav-link">SHOP</a></li>
+                <li><a href="services.html" class="nav-link">SERVICES</a></li>
+                <li><a href="about.html" class="nav-link">ABOUT</a></li>
+                <li><a href="contact.html" class="nav-link">CONTACT</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#" class="nav-icon"><i class="fas fa-search"></i></a>
+                <a href="cart.html" class="nav-icon"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#" class="nav-icon"><i class="fas fa-user"></i></a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Detail Content -->
+    <section class="product-detail">
+        <div class="container">
+            <div class="product-detail-layout">
+                <!-- Product Images -->
+                <div class="product-images">
+                    <div class="main-image">
+                        <div class="product-placeholder large">
+                            <i id="product-icon" class="fas fa-spa"></i>
+                        </div>
+                    </div>
+                    <div class="thumbnail-images">
+                        <div class="thumbnail active">
+                            <div class="product-placeholder small">
+                                <i id="product-icon-thumb1" class="fas fa-spa"></i>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <div class="product-placeholder small">
+                                <i id="product-icon-thumb2" class="fas fa-leaf"></i>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <div class="product-placeholder small">
+                                <i id="product-icon-thumb3" class="fas fa-seedling"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info-detail">
+                    <nav class="breadcrumb">
+                        <a href="shop.html">Shop</a>
+                        <span>/</span>
+                        <span id="product-category">Wellness</span>
+                        <span>/</span>
+                        <span id="product-name-breadcrumb">Product</span>
+                    </nav>
+
+                    <h1 id="product-name">Product Name</h1>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(24 reviews)</span>
+                    </div>
+
+                    <div class="product-price-detail">
+                        <span id="product-price">$45.00</span>
+                    </div>
+
+                    <div class="product-description-detail">
+                        <p id="product-description">Product description will be loaded here.</p>
+                    </div>
+
+                    <div class="product-features">
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> 100% Natural Ingredients</li>
+                            <li><i class="fas fa-check"></i> Cruelty-Free</li>
+                            <li><i class="fas fa-check"></i> Vegan-Friendly</li>
+                            <li><i class="fas fa-check"></i> Made in Small Batches</li>
+                        </ul>
+                    </div>
+
+                    <div class="product-options">
+                        <div class="quantity-selector">
+                            <label for="quantity">Quantity:</label>
+                            <div class="quantity-controls">
+                                <button class="quantity-btn minus" id="quantity-minus">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                                <input type="number" id="quantity" value="1" min="1" max="99">
+                                <button class="quantity-btn plus" id="quantity-plus">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-actions">
+                        <button class="btn btn-primary add-to-cart-detail" id="add-to-cart-detail">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-outline wishlist-detail" id="wishlist-detail">
+                            <i class="far fa-heart"></i>
+                            Add to Wishlist
+                        </button>
+                    </div>
+
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Category:</span>
+                            <span id="product-category-display">Wellness</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">SKU:</span>
+                            <span id="product-sku">MIR-001</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Availability:</span>
+                            <span class="in-stock">In Stock</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details Tabs -->
+    <section class="product-tabs">
+        <div class="container">
+            <div class="tabs-container">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="description">Description</button>
+                    <button class="tab-btn" data-tab="ingredients">Ingredients</button>
+                    <button class="tab-btn" data-tab="usage">How to Use</button>
+                    <button class="tab-btn" data-tab="reviews">Reviews</button>
+                </div>
+                
+                <div class="tab-content">
+                    <div class="tab-pane active" id="description">
+                        <h3>Product Description</h3>
+                        <p id="detailed-description">Detailed product description will be loaded here.</p>
+                    </div>
+                    
+                    <div class="tab-pane" id="ingredients">
+                        <h3>Ingredients</h3>
+                        <p>Our products are made with the finest natural ingredients, carefully selected for their efficacy and safety. Each ingredient is sourced from sustainable and ethical suppliers.</p>
+                        <ul id="ingredients-list">
+                            <li>Organic Aloe Vera</li>
+                            <li>Natural Essential Oils</li>
+                            <li>Plant-Based Extracts</li>
+                            <li>Mineral-Rich Clays</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-pane" id="usage">
+                        <h3>How to Use</h3>
+                        <p>Follow these simple steps to get the most out of your product:</p>
+                        <ol>
+                            <li>Start with clean, dry skin</li>
+                            <li>Apply a small amount to the desired area</li>
+                            <li>Gently massage in circular motions</li>
+                            <li>Use as directed for best results</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="tab-pane" id="reviews">
+                        <h3>Customer Reviews</h3>
+                        <div class="reviews-summary">
+                            <div class="average-rating">
+                                <span class="rating-number">4.8</span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="total-reviews">Based on 24 reviews</span>
+                            </div>
+                        </div>
+                        <div class="reviews-list">
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <div class="reviewer-name">Sarah M.</div>
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="review-text">"Amazing product! I've been using it for a month and the results are incredible. Highly recommend!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+        <div class="container">
+            <h2>You Might Also Like</h2>
+            <div class="products-grid" id="related-products-grid">
+                <!-- Related products will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe for new product launches, exclusive offers, and wellness tips</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <a href="index.html" class="logo-link">
+                            <img src="LOGO.png" alt="MIRMIA" class="logo-img">
+                            <span class="logo-text">MIRMIA</span>
+                        </a>
+                    </div>
+                    <p>Natural wellness and beauty solutions for a healthier, more beautiful you.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/mirmia.mirmia/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for exclusive offers and wellness tips</p>
+                    <form class="footer-newsletter">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MIRMIA. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="product-detail.js"></script>
+</body>
+</html>
