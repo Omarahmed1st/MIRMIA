@@ -278,7 +278,7 @@ function proceedToWhatsAppCheckout() {
     
     // Encode message for WhatsApp URL
     const encodedMessage = encodeURIComponent(message);
-    const whatsappNumber = "01104161598";
+    const whatsappNumber = "+201104161598";
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
     
     // Show confirmation dialog
